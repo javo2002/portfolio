@@ -1,0 +1,12 @@
+# Netlify Build Configuration for Next.js
+
+[build]
+  # This is the command to build your site.
+  command = "pnpm install && pnpm build"
+
+  # This is the directory that contains your built site.
+  publish = ".next"
+
+[[plugins]]
+  # This plugin automatically configures Netlify for Next.js.
+  package = "@netlify/plugin-nextjs"
